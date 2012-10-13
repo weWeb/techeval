@@ -1,0 +1,4 @@
+# src/Blogger/BlogBundle/Resources/config/config.yml
+parameters:
+    blogger_blog.emails.contact_email: group10weweb@gmail.com
+
