@@ -31,3 +31,8 @@ BloggerBlogBundle_comment_create:
         _method:  POST
         blog_id: \d+
 
+login:
+    pattern:   /login
+    defaults:  { _controller: BloggerBlogBundle:Security:login }
+login_check:
+    pattern:   /login_check
