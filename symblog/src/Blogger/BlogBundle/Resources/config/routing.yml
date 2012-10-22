@@ -13,6 +13,12 @@ BloggerBlogBundle_about:
     requirements:
         _method:  GET
 
+BloggerBlogBundle_comparison:
+    pattern:  /comparison
+    defaults: { _controller: BloggerBlogBundle:Page:comparison }
+    requirements:
+        _method:  GET
+
 BloggerBlogBundle_contact:
     pattern:  /contact
     defaults: { _controller: BloggerBlogBundle:Page:contact }

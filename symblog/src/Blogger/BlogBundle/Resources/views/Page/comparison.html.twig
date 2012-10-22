@@ -1,0 +1,35 @@
+{# src/Blogger/BlogBundle/Resources/views/Page/about.html.twig #}
+{# Reference: http://tutorial.symblog.co.uk/docs/configuration-and-templating.html #}
+
+{% extends 'BloggerBlogBundle::layout.html.twig' %}
+
+{% block title %}Comparison{% endblock%}
+
+{% block body %}
+    <article>
+		<section>
+        	<h1>Comparison of Symfony with other PHP Frameworks</h1>
+       		<p>Comparison goes here</p>
+		</section>
+
+		<div id="references">
+			<h1>References</h1>
+			<ul>
+				<li><a href="http://symfony2.openthinklabs.com/home/arsitektur" target="_blank">http://symfony2.openthinklabs.com/home/arsitektur</a></li>
+				<li><a href="http://www.oxagile.com/article/327-bundles-symfony-development-key-factor-app-extensibility" target="_blank">http://www.oxagile.com/article/327-bundles-symfony-development-key-factor-app-extensibility</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/Symfony" target="_blank">http://en.wikipedia.org/wiki/Symfony</a></li>
+				<li><a href="http://www.yphpmysql.com/php-framework/symfony-framework-development/" target="_blank">http://www.yphpmysql.com/php-framework/symfony-framework-development/</a></li>
+				<li><a href="http://www.hugohamon.com/fr/blog/six-reasons-why-twig-template-engine-makes-my-life-better" target="_blank">http://www.hugohamon.com/fr/blog/six-reasons-why-twig-template-engine-makes-my-life-better</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/Codeigniter" target="_blank">http://en.wikipedia.org/wiki/Codeigniter</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/CakePHP" target="_blank">http://en.wikipedia.org/wiki/CakePHP</a></li>
+				<li><a href="http://snook.ca/archives/php/codeigniter_vs_cakephp" target="_blank">http://snook.ca/archives/php/codeigniter_vs_cakephp</a></li>
+				<li><a href="http://ako-kaman.com/2012/03/09/symfony-vs-codeigniter/" target="_blank">http://ako-kaman.com/2012/03/09/symfony-vs-codeigniter</a></li>
+				<li><a href="http://www.ruilog.com/blog/view/b6f0e42cf705.html" target="_blank">http://www.ruilog.com/blog/view/b6f0e42cf705.html</a></li>
+			</ul>
+		</div>
+    </article>
+{% endblock %}
+
+{% block sidebar %}
+	{# empty sidebar #}
+{% endblock %}

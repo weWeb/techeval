@@ -11,23 +11,28 @@ use Blogger\BlogBundle\Form\EnquiryType;
 
 class PageController extends Controller
 {
-    	public function indexAction()
-    	{
-        	$em = $this->getDoctrine()
-            	       ->getEntityManager();
+	public function indexAction()
+	{
+    	$em = $this->getDoctrine()
+        	       ->getEntityManager();
 
-        	$blogs = $em->getRepository('BloggerBlogBundle:Blog')
-                	    ->getLatestBlogs();
+    	$blogs = $em->getRepository('BloggerBlogBundle:Blog')
+            	    ->getLatestBlogs();
 
-        	return $this->render('BloggerBlogBundle:Page:index.html.twig', array(
-            	'blogs' => $blogs
-        	));
-    	}
+    	return $this->render('BloggerBlogBundle:Page:index.html.twig', array(
+        	'blogs' => $blogs
+    	));
+	}
 
-    	public function aboutAction()
-    	{
-       	 	return $this->render('BloggerBlogBundle:Page:about.html.twig');
-    	}
+	public function aboutAction()
+	{
+   	 	return $this->render('BloggerBlogBundle:Page:about.html.twig');
+	}
+
+	public function comparisonAction()
+	{
+   	 	return $this->render('BloggerBlogBundle:Page:comparison.html.twig');
+	}
 
 	public function contactAction()
 	{
