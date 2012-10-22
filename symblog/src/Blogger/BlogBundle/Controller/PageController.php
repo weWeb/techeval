@@ -6,27 +6,28 @@ namespace Blogger\BlogBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Blogger\BlogBundle\Entity\Enquiry;
+use Blogger\BlogBundle\Entity\Blog;
 use Blogger\BlogBundle\Form\EnquiryType;
 
 class PageController extends Controller
 {
-    public function indexAction()
-    {
-        $em = $this->getDoctrine()
-                   ->getEntityManager();
+    	public function indexAction()
+    	{
+        	$em = $this->getDoctrine()
+            	       ->getEntityManager();
 
-        $blogs = $em->getRepository('BloggerBlogBundle:Blog')
-                    ->getLatestBlogs();
+        	$blogs = $em->getRepository('BloggerBlogBundle:Blog')
+                	    ->getLatestBlogs();
 
-        return $this->render('BloggerBlogBundle:Page:index.html.twig', array(
-            'blogs' => $blogs
-        ));
-    }
+        	return $this->render('BloggerBlogBundle:Page:index.html.twig', array(
+            	'blogs' => $blogs
+        	));
+    	}
 
-    public function aboutAction()
-    {
-        return $this->render('BloggerBlogBundle:Page:about.html.twig');
-    }
+    	public function aboutAction()
+    	{
+       	 	return $this->render('BloggerBlogBundle:Page:about.html.twig');
+    	}
 
 	public function contactAction()
 	{
@@ -72,6 +73,17 @@ class PageController extends Controller
         		'latestComments'    => $latestComments,
         		'tags'              => $tagWeights
     		));
+	}
+	
+
+	public function newblogAction()
+	{
+		$blog = new Blog();
+		$blog->setTitle("symblog - A Symfony2 Tutorial");
+		$blog->setAuthor("yfw1");
+		$blog->setBlog("symblog is a fully featured blogging website ...");
+		return $this->render('BloggerBlogBundle:Page:newblog.html.twig');
+
 	}
 
 }
