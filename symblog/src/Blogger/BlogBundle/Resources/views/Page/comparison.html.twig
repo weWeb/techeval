@@ -15,81 +15,81 @@
 			most of the major databases engines, such as MySQL, PostgreSQL, Oracle, and Microsoft SQL Server, 
 			and supports both Doctrine and Propel for object relational mappers (ORMs).</p>
 
-			<p>Customization and flexibility is one of the many aspects that make Symfony a desirable choice 
-			for developing dynamic web applications, especially in an enterprise context. The framework’s 
-			bundle-structure architecture and configuration system give developers complete control over the 
-			project and database setup, the framework behaviour, and integration of third-party libraries.</p>
+			<p>Customization and flexibility make Symfony a desirable choice for developing dynamic web 
+			applications, especially in an enterprise context. The framework’s bundle-structure architecture 
+			and configuration system gives developers complete control over the project and database setup, 
+			the framework behaviour, and integration of third-party libraries.</p>
 
 			<p>Aside from Symfony, there are many other existing PHP frameworks available. CakePHP is another 
 			open source MVC-based framework that was published in the same year as Symfony (2005). Like 
-			Symfony, it is distributed under the MIT license and therefore can be used within proprietary 
+			Symfony, it is distributed under the MIT license and can be used within proprietary 
 			software. Two other popular PHP frameworks released after Symfony are Codeigniter in 2006 and Yii 
-			in 2008. While both follow the MVC design pattern, Codeigniter takes a looser approach and makes 
-			models optional. Yii is licensed under the new BSD license, which is nearly identical to the MIT 
-			license except the latter lacks a “non-endorsement” clause. On the other hand, Codeigniter is 
-			licensed under the open software license v3, which means unlike projects using the other three 
-			frameworks, projects using Codeigniter cannot include GPL licensed components as the two licenses 
-			are incompatible.</p>
+			in 2008. While both follow the MVC design pattern, Codeigniter takes a more flexible approach and 
+			makes models optional. Yii is licensed under the new BSD license, which is nearly identical to the MIT 
+			license, except the latter lacks a “non-endorsement” clause. On the other hand, Codeigniter is 
+			licensed under the open software license v3. Unlike projects using the other three frameworks, 
+			projects using Codeigniter cannot include GPL-licensed components as the two licenses are incompatible.</p>
  
-			<p>Symfony’s greatest advantages are also its flaws. The flexibility, the customizability, and 
-			the many integrated third-party libraries help make development process more consistent and building 
-			of complex web applications faster. Unfortunately, the steep learning curve that results from such 
-			a powerful framework may prove to be too much for projects that do not require many of the features 
-			it offers.</p>
+			<p>Symfony’s greatest advantages are also its flaws. The flexibility, customizability, and integrated 
+			third-party libraries help make the development process more consistent. These features also allow one 
+			to build complex web applications faster. Unfortunately, the learning curve that results from such a 
+			powerful framework may be too steep to justify its use for projects that do not require many of 
+			the features it offers.</p>
   
 			<p>Comparing Codeigniter with Symfony, Codeigniter has less library support and does not come with a 
-			built-in ORM. However, Codeigniter is a more starter friendly framework and it is easier to setup; 
-			developers only have to unzip the framework into root and they can start using it without any 
-			additional configurations. Codeigniter also has a smaller footprint at an extracted folder size of 
-			4.1 MB (version 2.1.0) versus Symfony’s extracted size of 16.9 MB (version 2.0.11), and has better 
-			performance due to its smaller size and that the controllers do not run on top of a kernel.</p>
+			built-in ORM. However, Codeigniter is a more starter-friendly framework and is easier to setup; developers 
+			only have to unzip the framework into root before they can start using it without any additional 
+			configurations. Codeigniter has a smaller footprint at an extracted folder size of 4.1 MB (version 2.1.0) 
+			versus Symfony’s extracted size of 16.9 MB (version 2.0.11). Codeigniter performs better due to its smaller 
+			size and the fact that the controllers do not run on top of a kernel.</p>
 
-			<p>Yii is also a lighter framework than Symfony and is easy to get started with. Developers can 
+			<p>Yii is a lighter framework than Symfony and is easy to begin using. Developers can 
 			download the framework from svn or github and run a simple command to have a viewable base and pages 
-			up and running in no time. While both Symfony and Yii have code generation tools, Symfony’s code 
-			generation needs to be done through command line consoles while Yii’s tool, called Gii, is web-based. 
-			However, even though Yii is a component-based framework, the components cannot be used independently 
-			like the bundles in Symfony.</p>
+			up and running in no time. While both Symfony and Yii have code-generation tools, Symfony’s code generation 
+			needs to be done through command-line consoles; Yii’s tool, called Gii, is web-based. However, even though 
+			Yii is a component-based framework, the components cannot be used independently like the bundles in Symfony.</p>
  
-			<p>Like Codeigniter and Yii, installation for CakePHP is relatively easier than Symfony; just 
-			download the framework, unzip it in the web accessible document root, and it should work as is on 
-			most systems. CakePHP also has a lot of “automagic” that happens behind the scene, which can reduce 
-			the time it takes to build a website. The only requirement is that projects need to strictly follow 
-			CakePHP convention. Symfony, on the other hand, does not follow the “convention over configuration” 
-			approach, but rather it removed most of the automagic in the framework (from Symfony 1 to Symfony 2), 
-			and hands the full control to the developers.</p>
+			<p>Like Codeigniter and Yii, installing CakePHP is easier than installing Symfony. You simply download the 
+			framework and unzip it in the web accessible document root; it should work as is on most systems. CakePHP 
+			also has a lot of “automagic” that occurs behind the scenes; this, in turn, reduces the time it takes to 
+			build a website. The only requirement is that projects must strictly follow CakePHP conventions. Symfony, 
+			on the other hand, does not follow the “convention over configuration” approach. Instead, the developers 
+			removed most of the “automagic” from the framework (from Symfony 1 to Symfony 2), thereby handing over full 
+			control to the developers.</p>
 
-			<p>In terms of configurations, Symfony allows developers to use several different formats: YAML, XML, 
-			PHP, and annotations. These configuration files can be stored at different folders for different levels, 
-			targeting different environments. While the extensive configuration system gives developers power over 
+			<p>In terms of configurations, Symfony allows developers to use several different formats: YAML, XML, PHP, 
+			and annotations. These configuration files can be stored at different folders for different levels, and 
+			can target different environments. While the extensive configuration system gives developers power over 
 			project details, it can be very confusing. Codeigniter stores all its configuration files in one directory 
-			and only supports PHP format, making setting configuration options in Codeigniter very simple and 
-			straightforward. Yii and CakePHP also has only one directory dedicated to configuration files, and has a 
-			lot less configuration files to parse through compared to Symfony. Yii only supports PHP format while 
-			CakePHP supports PHP and INI.</p> 
+			and only supports PHP format. Setting configuration options in Codeigniter is therefore very simple and 
+			straightforward. Yii and CakePHP also have only one directory dedicated to configuration files, as well as 
+			fewer configuration files to parse through. Yii only supports PHP format, while CakePHP supports PHP and INI.</p> 
 
-			<p>In terms of benchmark comparisons between the four frameworks using a simple “Hello World” page output, 
-			for the Apache benchmark, Yii and Codeigniter had the highest requests per second (rps) at ~2300 rps, 
-			Symfony second with ~1370 rps, and CakePHP last with only ~870 rps. For the memory usage benchmark, 
-			CakePHP used the most memory at ~2800kb, Symfony second at ~1700 kb, Yii third at ~1200 kb, and Codeigniter 
-			used the least memory at ~750 kb. For the response time benchmark, CakePHP responded in ~14.7 ms, Symfony 
-			in ~12.8 ms, Codeigniter in ~7.2ms, and Yii in only ~6.6 ms. 
-			(Note: These benchmarks were done back in December 2011, so the results may not represent the current 
-			status of the frameworks well)</p>
+			<p>Using a simple “Hello World” page output, one could make the following benchmark comparisons between the 
+			four frameworks: for the Apache benchmark, Yii and Codeigniter had the highest requests per second (rps) at ~2300 rps, 
+			Symfony was second with ~1370 rps, and CakePHP was last with only ~870 rps. For the memory usage benchmark, 
+			CakePHP used the most memory at ~2800kb, Symfony used the second most memory at ~1700 kb, Yii used the third 
+			most at ~1200 kb, and Codeigniter used the least memory at ~750 kb. For the response time benchmark, CakePHP 
+			responded in ~14.7 ms, Symfony responded in ~12.8 ms, Codeigniter responded in ~7.2ms, and Yii 
+			responded in only ~6.6 ms. 
+			<br>
+			(Note: These benchmarks were recorded back in December 2011, so the results may not accurately 
+			represent the current status of the frameworks.)</p>
 
-			<p>Most frameworks have their pros and cons, and one may be more suitable than another to use for a project 
-			depending on the project nature. However, the amount of community support and documentation is often an 
-			important factor for developers when deciding on a framework to use. Yii is the youngest of the four frameworks, 
-			therefore has a smaller community, but Yii does have an application development cookbook and very thorough API 
-			reference. Likewise, CakePHP and Symfony have extensive cookbooks as well, but CakePHP’s documentation is not 
-			always complete and is difficult to search for. Symfony has a lot of clean and well written documentations, 
-			but due to the flexibility and power of the framework, the documentations’ complexity and length might deter away 
-			novice developers. Also, due to the release of Symfony 2 and the lack of backward compatibility, developers will 
-			have to make sure the right version of the documentations is used in conjunction with the right version of 
-			Symfony. Symfony does have a very large community due to its popularity with large scale projects and enterprises, 
-			so there are many tutorials and documentations available on the web written by volunteers. Out of the four 
-			frameworks however, Codeigniter probably has the best official documentations, and it has a lot of tutorials and 
-			screencasts available around the web, making it a desirable framework for starters to choose. </p>
+			<p>Every framework has both pros and cons. However, the amount of community support and documentation 
+			available for each framework is often an important factor for developers trying to decide which 
+			framework to use. Yii is the youngest of the four frameworks, and therefore has a smaller community; 
+			however, Yii does have an application development cookbook and a very thorough API reference. Likewise, 
+			CakePHP and Symfony also have extensive cookbooks, but CakePHP’s documentation is often incomplete and 
+			difficult to find. Symfony has a lot of clean and well-written documentation, but due to the flexibility 
+			and power of the framework, the documentation’s length and complexity might deter novice developers. 
+			Furthermore, due to the release of Symfony 2 and its lack of backward compatibility, developers have 
+			to ensure the correct version of documentation is used in conjunction with the corresponding version of 
+			Symfony. Symfony does have a very large community due to its popularity with large scale projects and 
+			enterprises, so there are many tutorials and documentations available on the web written by volunteers. 
+			Out of the four frameworks however, Codeigniter probably has the best official documentation and the 
+			most web tutorials and screencasts to choose from, all of which make it a desirable framework for 
+			starters to choose.</p>
 		</section>
 
 		<div id="references">
