@@ -7,19 +7,34 @@ form.blogger input[type="text"], form.blogger input[type="email"]
 form.blogger textarea { width: 400px; height: 150px; line-height: 26px; font-size: 14px; max-width: 400px; min-width: 400px; }
 form.blogger input[type="submit"] { margin-left: 220px; width: 100px; line-height: 26px; font-size: 14px; min-height: 26px; }
 form.blogger ul li { color: #ff0000; float: left; margin-bottom: 5px; display: inline; }
+
 .date { margin-bottom: 0px; font-size: 14px; color: #6B2400; line-height: 25px; text-align: right; padding-right: 0px; border-bottom: 1px dashed wheat; }
 .blog { margin-top: 0px; margin-bottom: 20px; }
 .blog img { width: 190px; float: left; padding: 5px; border: 1px solid #ccc; margin: 0 10px 10px 0; }
 .blog .meta { clear: left; margin-bottom: 20px;  font-style: italic; font-size: 12px; color: #666; }
-.blog .meta p { margin-bottom: 5px; line-height: 1.2em;}
+.blog .meta p { margin-bottom: 5px; line-height: 1.2em; color: #DB5D1F; padding: 5px; }
 .blog img.large { width: 300px; min-height: 165px; }
 .blog .snippet p.continue { margin: 0px; margin-top: 0px; text-align: right; }
 .blog h2 { margin-top: 15px; margin-bottom: 10px; font-size: 24px; font-weight: 600; text-transform:capitalize; }
 
-.comments { clear: both; }
-.comments .odd { background: #eee; }
-.comments .comment { padding: 20px; }
-.comments .comment p { margin-bottom: 0; }
-.comments h3 { background: #eee; padding: 10px; font-size: 20px; margin-bottom: 20px; clear: both; }
-.comments .previous-comments { margin-bottom: 20px; }
+.comments { clear: both; margin: 0px; padding: 0px; }
 
+.comments .comment { padding: 0px; margin: 0px; }
+.comments p { padding: 5px 10px 25px 10px; margin: 0px; color: #a68282; }
+.comments .comment p { padding: 5px 10px 25px 10px; margin: 0px; color: #a68282; }
+.comments .comment header p { padding: 5px 10px 5px 10px; margin: 0px; color: white; }
+.comments h3 { border-bottom: 1px dashed; padding: 10px 0px 10px 0px; font-size: 16px; text-align: right; margin-bottom: 20px; color: #a68282; clear: both; }
+.comments .previous-comments { margin: 0px; }
+
+.comments header { margin: 0px; padding: 0px;  background: #cbbfbc }
+.comments span { color: #9d7070; font-size: 14px; font-weight: 600;  }
+
+form.comment { font-size: 14px; color: #cbbfbc; font-family: 'Verdana'; margin-top: 20px; }
+form.comment div { clear: left; margin-bottom: 10px; }
+form.comment label { float: left; margin-right: 30px; text-align: left; width: 70px; font-weight: bold; vertical-align: top; padding-top: 7px; }
+form.comment input[type="text"] { width: 400px; line-height: 26=0px; font-size: 12px; min-height: 26px; font-family: 'Verdana';}
+form.comment textarea { width: 400px; height: 150px; line-height: 20px; font-size: 12px; max-width: 400px; min-width: 400px; font-family: 'Verdana'; }
+form.comment ul li { color: #ff0000; float: left; margin-bottom: 5px; display: inline; }
+form.comment input[type="submit"] { margin-left: 240px; width: 100px; line-height: 26px; font-size: 14px; min-height: 26px; }
+
+.sidebar .about p { margin: 0px; margin-top: 20px; padding: 2px 10px 2px 10px; background: wheat }

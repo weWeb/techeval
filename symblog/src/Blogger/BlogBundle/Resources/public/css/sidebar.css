@@ -3,9 +3,10 @@
 .sidebar p { line-height: 1.5em; margin: 15px; }
 .sidebar ul { list-style: none }
 .sidebar ul li { line-height: 1.5em }
-.sidebar .small { font-size: 12px; }
-.sidebar .comment p { margin-bottom: 5px; }
-.sidebar .comment { margin-bottom: 10px; padding-bottom: 10px; }
+.sidebar .small { font-size: 12px; background: wheat; margin: 0px; padding: 5px; color: #F48A00; }
+.sidebar .small span { font-size: 14px; font-weight: 600; color: #972f2f; }
+.sidebar .comment { margin: 0px; padding: 5px; color: #db5d1f; }
+.sidebar .commentlist { padding-bottom: 1px; background: #fffef9; }
 .sidebar .tags { font-weight: bold; }
 .sidebar .tags span { color: #F48A00; font-size: 12px; }
 .sidebar .tags .weight-1 { font-size: 12px; }

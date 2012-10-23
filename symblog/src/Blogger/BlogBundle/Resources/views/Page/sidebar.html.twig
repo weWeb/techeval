@@ -20,16 +20,16 @@
         <h3>Latest Comments</h3>
     </header>
     {% for comment in latestComments %}
-        <article class="comment">
+        <article class="commentlist">
             <header>
-                <p class="small"><span class="highlight">{{ comment.user }}</span> commented on
+                <p class="small"><span>{{ comment.user }}</span> commented on
                     	<a href="{{ path('BloggerBlogBundle_blog_show', { 'id': comment.blog.id, 'slug': comment.blog.slug }) }}#comment-{{ comment.id }}">
     			{{ comment.blog.title }}
 			</a>
                     [<em><time datetime="{{ comment.created|date('c') }}">{{ comment.created|created_ago }}</time></em>]
                 </p>
             </header>
-            <p>{{ comment.comment }}</p>
+            <p class="comment">{{ comment.comment }}</p>
             </p>
         </article>
     
