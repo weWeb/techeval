@@ -2,7 +2,7 @@ parameters:
     database_driver: pdo_mysql
     database_host: localhost
     database_port: null
-    database_name: blog
+    database_name: test
     database_user: root
     database_password: weweb
     mailer_transport: smtp

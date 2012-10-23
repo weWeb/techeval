@@ -7,14 +7,15 @@ form.blogger input[type="text"], form.blogger input[type="email"]
 form.blogger textarea { width: 400px; height: 150px; line-height: 26px; font-size: 14px; max-width: 400px; min-width: 400px; }
 form.blogger input[type="submit"] { margin-left: 220px; width: 100px; line-height: 26px; font-size: 14px; min-height: 26px; }
 form.blogger ul li { color: #ff0000; float: left; margin-bottom: 5px; display: inline; }
-.date { margin-bottom: 20px; border-bottom: 1px solid #ccc; font-size: 24px; color: #666; line-height: 30px }
-.blog { margin-bottom: 20px; }
+.date { margin-bottom: 0px; font-size: 14px; color: #6B2400; line-height: 25px; text-align: right; padding-right: 0px; border-bottom: 1px dashed wheat; }
+.blog { margin-top: 0px; margin-bottom: 20px; }
 .blog img { width: 190px; float: left; padding: 5px; border: 1px solid #ccc; margin: 0 10px 10px 0; }
-.blog .meta { clear: left; margin-bottom: 20px; }
-.blog .snippet p.continue { margin-bottom: 0; text-align: right; }
-.blog .meta { font-style: italic; font-size: 12px; color: #666; }
-.blog .meta p { margin-bottom: 5px; line-height: 1.2em; }
+.blog .meta { clear: left; margin-bottom: 20px;  font-style: italic; font-size: 12px; color: #666; }
+.blog .meta p { margin-bottom: 5px; line-height: 1.2em;}
 .blog img.large { width: 300px; min-height: 165px; }
+.blog .snippet p.continue { margin: 0px; margin-top: 0px; text-align: right; }
+.blog h2 { margin-top: 15px; margin-bottom: 10px; font-size: 24px; font-weight: 600; text-transform:capitalize; }
+
 .comments { clear: both; }
 .comments .odd { background: #eee; }
 .comments .comment { padding: 20px; }

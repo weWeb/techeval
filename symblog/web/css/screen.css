@@ -1,5 +1,4 @@
-body { 	line-height: 1; font-family: 'Verdana', 'Arial', sans-serif; font-size: 12px; width: 100%; height: 100%; color: #000; font-size: 14px; background-color: #FFF5B8;}	
-
+body { 	line-height: 1; font-family: 'Verdana', 'Arial', sans-serif; font-size: 12px; width: 100%; height: 100%; color: #000; font-size: 14px; background-color: #FFF; margin: 0; }	
 
 .clear { clear: both; }
 
@@ -8,33 +7,45 @@ a:active {
 }
 
 #wrapper { margin: 10px auto; width: 1000px; }
-#wrapper a { text-decoration: none; color: #FF591A; }
-#wrapper a:hover {color: wheat}
+#wrapper a { text-decoration: none; color: #DB5D1F; }
+#wrapper a:hover {color: #972f2f; }
 #wrapper span.highlight { color: #F48A00; }
 
-#header { border-bottom: 1px solid #DA4100; margin-bottom: 20px; }
-#header .top { border-bottom: 1px solid #DA4100; margin-bottom: 0px; }
-#header ul.navigation { list-style: none; text-align: left; }
-#header .navigation li { display: inline }
-#header .navigation li a {padding: 13px 20px; border-left: 1px solid #DA4100;}
-#header h2 { font-family: 'The Girl Next Door'; font-size: 50px; text-align: center; line-height: 0px; margin-top: 70px; }
+#header { margin-bottom: 20px; }
+#header .top { margin-bottom: 0px; width: 210px; clear: both; float: left; }
+#header .banner { float: right; }
+#header ul.navigation { list-style: none; text-align: left; margin-top: 0px; } 
+#header .navigation li { list-style: none; margin-left: -38px; padding: 0.75em; border-bottom: 1px solid gray; font-size: 16px;}
+#header .navigation li a { padding: 0px; font-weight:600; }
+
+#header h2 { font-family: 'The Girl Next Door'; font-size: 30px; text-align: left; line-height: 0px; margin-top: 50px; margin-bottom: 30px; float:left; }
 #header h2 a { color: #6B2400; }
 #header h2 a:hover { color: wheat; }
-#header h3 { text-align: center; font-family: 'Annie Use Your Telescope'; font-size: 20px; margin-top: -5px; margin-bottom: 35px; font-weight: normal; color: #F48A00}
+#header h3 { text-align: left; font-family: 'Annie Use Your Telescope'; font-size: 15px; margin-top: -5px; margin-bottom: 35px; font-weight: normal; color: #F48A00}
 
-.main-col { width: 700px; display: inline-block; float: left; padding: 20px; margin-top: -30px; margin-bottom: 20px;  }
+#header .login { float: right; }
 
-.sidebar { width: 239px; padding: 10px; display: inline-block; color: #4C1A00  }
+.main-col { width: 770px; display: inline-block; float: right; padding: 0px; margin-top: 10px; margin-bottom: 20px; }
+
+.sidebar { width: 210px; padding: 0px; display: inline-block; color: #4C1A00; margin-top: -6px;}
 .sidebar ul { list-style: none; text-align: left; color: #AD5C33; text-indent: -2em; line-height: 25px; }
 
-.main-col a { color: #F48A00; }
-.main-col h1,
-.main-col h2
-    { line-height: 1.2em; font-size: 28px; margin-bottom: 10px; font-weight: normal; color: #FF591A;}
+.main-col h1 { line-height: 1.2em; font-size: 28px; margin-bottom: 10px; margin-top: 0px; font-weight: 600; color: #DB5D1F;}
+.main-col h2 { line-height: 1.2em; font-size: 28px; margin-bottom: 10px; font-weight: normal; color: #DB5D1F;}
 .main-col p { line-height: 1.5em; margin-bottom: 20px; font-size: 14px; color: #F48A00 }
 
-#footer { border-top: 1px solid #DA4100; clear: both; text-align: center; padding: 10px; color: #FFB894; }
+#footer { border-top: 1px solid #DA4100; clear: both; text-align: center; padding: 10px; color: #972f2f; }
 
 #references ul { list-style: none; line-height: 2em; }
+
+.login { position:relative; width:600px; height:75px; }
+.loginform { position:absolute; height:75px; top: 40px; right: 0px; }
+.loginerror { position:absolute; top: 25px; width:600px; font-size: 12px; color: red; font-family: 'Verdana'; text-align: right; margin-bottom: 5px; font-style: italic; }
+
+form.login { font-size: 12px; color: #F48A00; font-family: 'Verdana'; text-align: right; }
+form.login div { margin-bottom: 10px; }
+form.login label { margin-top: 0px; text-align: left; width: 80px; font-weight: bold; vertical-align: middle; }
+form.login input[type="text"], form.login input[type="password"]  { width: 150px; font-size: 12px; min-height: 20px; margin-right: 10px; }
+.
 
 

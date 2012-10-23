@@ -1,6 +1,6 @@
-.sidebar .section { margin-bottom: 20px; }
-.sidebar h3 { line-height: 1.2em; font-size: 20px; margin-bottom: 10px; font-weight: normal; background: wheat; padding: 5px;  }
-.sidebar p { line-height: 1.5em; margin-bottom: 20px; }
+.sidebar .section { margin-top: 0px; }
+.sidebar h3 { line-height: 1.2em; font-size: 16px; margin-left: 0px; font-weight: 600; background: #DB5D1F; padding: 5px; padding-left: 15px; color: #FFF }
+.sidebar p { line-height: 1.5em; margin: 15px; }
 .sidebar ul { list-style: none }
 .sidebar ul li { line-height: 1.5em }
 .sidebar .small { font-size: 12px; }
