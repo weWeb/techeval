@@ -13,6 +13,11 @@ class UserFixtures extends AbstractFixture implements OrderedFixtureInterface
     public function load(ObjectManager $manager)
     {
 
+        $user0 = new User();
+        $user0->setUsername('user');
+        $user0->setPassword(hash('sha1','userpass'));
+
+        $manager->persist($user0);
 
         $user1 = new User();
         $user1->setUsername('yfw1');

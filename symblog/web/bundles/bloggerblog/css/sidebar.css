@@ -1,0 +1,17 @@
+.sidebar .section { margin-top: 0px; }
+.sidebar h3 { line-height: 1.2em; font-size: 16px; margin-left: 0px; font-weight: 600; background: #DB5D1F; padding: 5px; padding-left: 15px; color: #FFF }
+.sidebar p { line-height: 1.5em; margin: 15px; }
+.sidebar ul { list-style: none }
+.sidebar ul li { line-height: 1.5em }
+.sidebar .small { font-size: 12px; background: wheat; margin: 0px; padding: 5px; color: #F48A00; }
+.sidebar .small span { font-size: 14px; font-weight: 600; color: #972f2f; }
+.sidebar .comment { margin: 0px; padding: 5px; color: #db5d1f; }
+.sidebar .commentlist { padding-bottom: 1px; background: #fffef9; }
+.sidebar .tags { font-weight: bold; }
+.sidebar .tags span { color: #F48A00; font-size: 12px; }
+.sidebar .tags .weight-1 { font-size: 12px; }
+.sidebar .tags .weight-2 { font-size: 15px; }
+.sidebar .tags .weight-3 { font-size: 18px; }
+.sidebar .tags .weight-4 { font-size: 21px; }
+.sidebar .tags .weight-5 { font-size: 24px; }
+
