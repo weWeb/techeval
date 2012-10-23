@@ -12,6 +12,7 @@ return array(
     'Symfony\\Bundle\\MonologBundle' => $vendorDir . '/symfony/monolog-bundle/',
     'Symfony\\Bundle\\AsseticBundle' => $vendorDir . '/symfony/assetic-bundle/',
     'Symfony\\' => $vendorDir . '/symfony/symfony/src/',
+    'Stfalcon\\Bundle\\TinymceBundle' => $vendorDir . '/stfalcon/tinymce-bundle/',
     'Sensio\\Bundle\\GeneratorBundle' => $vendorDir . '/sensio/generator-bundle/',
     'Sensio\\Bundle\\FrameworkExtraBundle' => $vendorDir . '/sensio/framework-extra-bundle/',
     'Sensio\\Bundle\\DistributionBundle' => $vendorDir . '/sensio/distribution-bundle/',

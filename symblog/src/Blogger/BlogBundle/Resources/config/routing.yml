@@ -13,17 +13,25 @@ BloggerBlogBundle_about:
     requirements:
         _method:  GET
 
+BloggerBlogBundle_comparison:
+    pattern:  /comparison
+    defaults: { _controller: BloggerBlogBundle:Page:comparison }
+    requirements:
+        _method:  GET
+
 BloggerBlogBundle_contact:
     pattern:  /contact
     defaults: { _controller: BloggerBlogBundle:Page:contact }
     requirements:
         _method:  GET|POST
+
 BloggerBlogBundle_blog_show:
     pattern:  /{id}/{slug}
     defaults: { _controller: BloggerBlogBundle:Blog:show }
     requirements:
         _method:  GET
         id: \d+
+
 BloggerBlogBundle_comment_create:
     pattern:  /comment/{blog_id}
     defaults: { _controller: BloggerBlogBundle:Comment:create }
@@ -36,3 +44,9 @@ login:
     defaults:  { _controller: BloggerBlogBundle:Security:login }
 login_check:
     pattern:   /login_check
+
+BloggerBlogBundle_newblog:
+    pattern:  /newblog
+    defaults: { _controller: BloggerBlogBundle:Page:newblog }
+    requirements:
+        _method: GET|POST

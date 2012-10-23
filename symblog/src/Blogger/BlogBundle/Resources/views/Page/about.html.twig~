@@ -1,0 +1,29 @@
+{# src/Blogger/BlogBundle/Resources/views/Page/about.html.twig #}
+{# Reference: http://tutorial.symblog.co.uk/docs/configuration-and-templating.html #}
+
+{% extends 'BloggerBlogBundle::layout.html.twig' %}
+
+{% block title %}About{% endblock%}
+
+{% block body %}
+    <header>
+        <h1>About Symfony</h1>
+    </header>
+    <article>
+        <p>Symfony is an internationally recognized PHP web application framework under the MIT license. 
+		Supported by SensioLabs, Symfony provides a stable development environment with a large community of developers 
+		and many existing resources. </p>
+    </article>
+    	<textarea class="tinymce"></textarea>
+	{{ tinymce_init() }}	
+{% endblock %}
+
+{% block sidebar %}
+    <p><strong>GROUP 10: WEWEB</strong></p>
+	<ul>
+		<li>&#187; Andy Li</li>
+		<li>&#187; Lily Wang</li>
+		<li>&#187; Roy Wang</li>
+		<li>&#187; Ryan Wong</li>
+	</ul>
+{% endblock %}
