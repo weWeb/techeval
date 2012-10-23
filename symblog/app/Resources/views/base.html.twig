@@ -32,10 +32,8 @@
                             <ul class="navigation">
                                 <li><a href="{{ path('BloggerBlogBundle_homepage') }}">Home</a></li>
                                 <li><a href="{{ path('BloggerBlogBundle_about') }}">About</a></li>
-				<li><a href="{{ path('BloggerBlogBundle_comparison') }}">Comparison</a></li>
-				{# <li><a href="{{ path('BloggerBlogBundle_comparison') }}">Presentation</a></li> #}
+								<li><a href="{{ path('BloggerBlogBundle_comparison') }}">Comparison</a></li>
                                 <li><a href="{{ path('BloggerBlogBundle_contact') }}">Contact</a></li>
-				<li><a></a></li>
 				{% if app.user.username is defined %}
 					<li><a href="#">Hi, {{app.user.username}}</a></li>
 				{% endif %}
