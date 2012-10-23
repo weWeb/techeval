@@ -4,8 +4,8 @@
 {% extends 'BloggerBlogBundle::layout.html.twig' %}
 
 {% block body %}
-	<div id="newblog">
-		<a href="{{ path('BloggerBlogBundle_newblog') }}">Add blog</a>
+	<div id="addpost">
+		<a href="{{ path('BloggerBlogBundle_newblog') }}">Add Post</a>
 	</div>
 	{% if app.session.hasFlash('blogger-notice') %}
     		<div class="blogger-notice">

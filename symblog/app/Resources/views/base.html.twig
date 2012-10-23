@@ -24,6 +24,11 @@
 
 				<div class="login">
 					  {% block login %}{% endblock %}
+					<p>
+						{% if app.user.username is defined %}
+							<a href="#">Hi, {{app.user.username}}</a>
+						{% endif %}
+					</p>
 				</div>
 
                 <div class="top">
@@ -34,9 +39,6 @@
                                 <li><a href="{{ path('BloggerBlogBundle_about') }}">About</a></li>
 								<li><a href="{{ path('BloggerBlogBundle_comparison') }}">Comparison</a></li>
                                 <li><a href="{{ path('BloggerBlogBundle_contact') }}">Contact</a></li>
-				{% if app.user.username is defined %}
-					<li><a href="#">Hi, {{app.user.username}}</a></li>
-				{% endif %}
                             </ul>
                         </nav>
                     {% endblock %}
