@@ -7,33 +7,34 @@ form.blogger input[type="text"], form.blogger input[type="email"]
 form.blogger textarea { width: 400px; height: 150px; line-height: 26px; font-size: 14px; max-width: 400px; min-width: 400px; }
 form.blogger input[type="submit"] { margin-left: 220px; width: 100px; line-height: 26px; font-size: 14px; min-height: 26px; }
 form.blogger ul li { color: #ff0000; float: left; margin-bottom: 5px; display: inline; }
-.date { margin-bottom: 20px; border-bottom: 1px solid #ccc; font-size: 24px; color: #666; line-height: 30px }
-.blog { margin-bottom: 20px; }
+.date { margin-bottom: 0px; font-size: 14px; color: #6B2400; line-height: 25px; text-align: right; padding-right: 0px; border-bottom: 1px dashed wheat; }
+.blog { margin-top: 0px; margin-bottom: 20px; }
 .blog img { width: 190px; float: left; padding: 5px; border: 1px solid #ccc; margin: 0 10px 10px 0; }
-.blog .meta { clear: left; margin-bottom: 20px; }
-.blog .snippet p.continue { margin-bottom: 0; text-align: right; }
-.blog .meta { font-style: italic; font-size: 12px; color: #666; }
-.blog .meta p { margin-bottom: 5px; line-height: 1.2em; }
+.blog .meta { clear: left; margin-bottom: 20px;  font-style: italic; font-size: 12px; color: #666; }
+.blog .meta p { margin-bottom: 5px; line-height: 1.2em;}
 .blog img.large { width: 300px; min-height: 165px; }
+.blog .snippet p.continue { margin: 0px; margin-top: 0px; text-align: right; }
+.blog h2 { margin-top: 15px; margin-bottom: 10px; font-size: 24px; font-weight: 600; text-transform:capitalize; }
+
 .comments { clear: both; }
 .comments .odd { background: #eee; }
 .comments .comment { padding: 20px; }
 .comments .comment p { margin-bottom: 0; }
 .comments h3 { background: #eee; padding: 10px; font-size: 20px; margin-bottom: 20px; clear: both; }
 .comments .previous-comments { margin-bottom: 20px; }
-.sidebar .section { margin-bottom: 20px; }
-.sidebar h3 { line-height: 1.2em; font-size: 20px; margin-bottom: 10px; font-weight: normal; background: #eee; padding: 5px;  }
-.sidebar p { line-height: 1.5em; margin-bottom: 20px; }
-.sidebar ul { list-style: none }
-.sidebar ul li { line-height: 1.5em }
-.sidebar .small { font-size: 12px; }
-.sidebar .comment p { margin-bottom: 5px; }
-.sidebar .comment { margin-bottom: 10px; padding-bottom: 10px; }
-.sidebar .tags { font-weight: bold; }
-.sidebar .tags span { color: #000; font-size: 12px; }
-.sidebar .tags .weight-1 { font-size: 12px; }
-.sidebar .tags .weight-2 { font-size: 15px; }
-.sidebar .tags .weight-3 { font-size: 18px; }
-.sidebar .tags .weight-4 { font-size: 21px; }
-.sidebar .tags .weight-5 { font-size: 24px; }
+
+#newblog {padding-bottom: 50px}
+#newblog a {border: solid 1px #F48A00; background: PeachPuff; font-size: 24px; display: inline-block; float: right; padding: 5px}
+
+
+form.newblog { font-size: 14px; color: #F48A00; font-family: 'Verdana'; margin-top: 20px; }
+form.newblog div { clear: left; margin-bottom: 10px; }
+form.newblog label { float: left; margin-right: 10px; text-align: left; width: 70px; font-weight: bold; vertical-align: top; padding-top: 10px; }
+form.newblog input[type="text"], form.newblog input[type="email"]
+    { width: 400px; line-height: 26px; font-size: 14px; min-height: 26px; }
+form.newblog textarea { width: 400px; height: 400px; line-height: 26px; font-size: 14px; max-width: 400px; min-width: 400px; }
+form.newblog input[type="submit"] { margin-left: 220px; width: 100px; line-height: 26px; font-size: 14px; min-height: 26px; }
+form.newblog ul li { color: #ff0000; float: left; margin-bottom: 5px; display: inline; }
+.date { margin-bottom: 0px; font-size: 14px; color: #6B2400; line-height: 25px; text-align: right; padding-right: 0px; border-bottom: 1px dashed wheat; }
+
 

@@ -5,44 +5,25 @@ namespace Blogger\BlogBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
-/**
- * Acme\UserBundle\Entity\User
- *
- * @ORM\Table(name="user")
- * @ORM\Entity
- */
+
 class User implements UserInterface
 {
-    /**
-     * @ORM\Column(type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
+
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=25, unique=true)
-     */
+
     private $username;
 
-    /**
-     * @ORM\Column(type="string", length=32)
-     */
+
     private $salt;
 
-    /**
-     * @ORM\Column(type="string", length=40)
-     */
+
     private $password;
 
-    /**
-     * @ORM\Column(type="string", length=60, unique=true)
-     */
+
     private $email;
 
-    /**
-     * @ORM\Column(name="is_active", type="boolean")
-     */
+
     private $isActive;
     
     public function __construct()

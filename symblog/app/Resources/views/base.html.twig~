@@ -37,7 +37,7 @@
                                 <li><a href="{{ path('BloggerBlogBundle_contact') }}">Contact</a></li>
 				<li><a></a></li>
 				{% if app.user.username is defined %}
-					<li><a href="#">Hi, {{app.user.username}}</a></li>
+					<li style="float:left"><a href="#">Hi, {{app.user.username}}</a></li>
 				{% endif %}
                             </ul>
                         </nav>
