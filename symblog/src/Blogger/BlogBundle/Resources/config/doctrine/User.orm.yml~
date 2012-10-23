@@ -4,7 +4,7 @@ Blogger\BlogBundle\Entity\User:
     id:
         id:
             type: integer
-            generator: {strategy: AUTO}
+            generator:{strategy: AUTO}
     fields:
         username:
             type: string

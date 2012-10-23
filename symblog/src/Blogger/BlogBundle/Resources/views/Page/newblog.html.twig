@@ -3,35 +3,35 @@
  
 {% extends 'BloggerBlogBundle::layout.html.twig' %}
 
-{% block title %}Add a New Blog{% endblock%}
+{% block title %}Add New Blog{% endblock%}
 
 {% block body %}
     <header>
         <h2>Add a new Entry</h2>
     </header>
 
-{% if app.session.hasFlash('blogger-notice') %}
-    	<div class="blogger-notice">
-        	{{ app.session.flash('blogger-notice') }}
-    	</div>
-{% endif %}
 
-
-    	<textarea class="tinymce" rows="20" cols="20" style="width:100%; height:100%" data-theme="advanced"></textarea>
-	{{ tinymce_init() }}	
-
-	{# <form action="{{ path('BloggerBlogBundle_newblog') }}" method="post" {{ form_enctype(form) }} class="blogger">
+{% autoescape true %}
+    <form action="{{ path('BloggerBlogBundle_newblog') }}" method="post" {{ form_enctype(form) }} class="newblog">
         {{ form_errors(form) }}
 
-        {{ form_row(form.name) }}
-        {{ form_row(form.email) }}
-        {{ form_row(form.subject) }}
-        {{ form_row(form.body) }}
+	{# form_row(form.author) #}
+	<div>
+		{{ form_label(form.author) }}
+		{{ form_errors(form.author) }}
+		{{ form_widget(form.author, {'attr': {'value': '%currentuser%' }})|replace({'%currentuser%': app.user.username})|raw }}
+	</div>
+        {{ form_row(form.title)}}
+        {{ form_row(form.blog) |raw }}
 
         {{ form_rest(form) }}
-
+	
+	
+	
         <input type="submit" value="Submit" />
-    </form> #}
+    </form>
+    {{ tinymce_init() }}
+    {% endautoescape%}
 {% endblock %}
 
 {% block sidebar %}

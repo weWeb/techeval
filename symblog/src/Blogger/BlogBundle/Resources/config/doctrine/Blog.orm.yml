@@ -18,8 +18,10 @@ Blogger\BlogBundle\Entity\Blog:
       image:
          type: string
          length: 20
+         nullable: true
       tags:
          type: text
+         nullable: true
       created:
          type: datetime
       updated:

@@ -8,6 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Blogger\BlogBundle\Entity\Enquiry;
 use Blogger\BlogBundle\Entity\Blog;
 use Blogger\BlogBundle\Form\EnquiryType;
+use Blogger\BlogBundle\Form\BlogType;
 
 class PageController extends Controller
 {
@@ -84,10 +85,36 @@ class PageController extends Controller
 	public function newblogAction()
 	{
 		$blog = new Blog();
-		$blog->setTitle("symblog - A Symfony2 Tutorial");
+		$form = $this->createForm(new BlogType(), $blog);
+		
+		$request = $this->getRequest();
+    			if ($request->getMethod() == 'POST') {
+        			$form->bindRequest($request);
+
+        			if ($form->isValid()) {
+            				$em = $this->getDoctrine()
+                       				->getEntityManager();
+           			 	$em->persist($blog);
+           			 	
+           				$em->flush();
+            				$this->get('session')->setFlash('blogger-notice', 'The New Entry was successfully created. Thank you!');
+           				return $this->redirect($this->generateUrl('BloggerBlogBundle_homepage'));
+        			}
+   	 	}
+
+		/*$blog->setTitle("symblog - A Symfony2 Tutorial");
 		$blog->setAuthor("yfw1");
 		$blog->setBlog("symblog is a fully featured blogging website ...");
-		return $this->render('BloggerBlogBundle:Page:newblog.html.twig');
+        	$blog->setImage('no_image.png');
+        	$blog->setCreated(new \DateTime());
+        	$blog->setUpdated($blog->getCreated());
+           	$em = $this->getDoctrine()
+                       ->getEntityManager();
+		$em->persist($blog);
+            	$em->flush();
+            	*/
+            	
+		return $this->render('BloggerBlogBundle:Page:newblog.html.twig', array('form' => $form->createView()));
 
 	}
 

@@ -5,6 +5,8 @@ namespace Blogger\BlogBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 
+
+
 class Blog
 {
 	protected $title;
