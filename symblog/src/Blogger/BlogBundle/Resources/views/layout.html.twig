@@ -5,7 +5,15 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link href="{{ asset('bundles/bloggerblog/css/blog.css') }}" type="text/css" rel="stylesheet" />
+
+	<!--[if !IE]><!-->
+		<link href="{{ asset('bundles/bloggerblog/css/blog.css') }}" type="text/css" rel="stylesheet" />
+	<!--<![endif]-->
+				
+	<!--[if IE]>		
+		<link href="{{ asset('bundles/bloggerblog/css/blog_ie.css') }}" type="text/css" rel="stylesheet" />
+	<![endif]--> 
+
     <link href="{{ asset('bundles/bloggerblog/css/sidebar.css') }}" type="text/css" rel="stylesheet" />
 {% endblock %}
 
