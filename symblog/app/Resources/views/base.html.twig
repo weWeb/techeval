@@ -1,17 +1,17 @@
 {# Tutorial obtained from: http://tutorial.symblog.co.uk/docs/configuration-and-templating.html #}
 
 <!-- app/Resources/views/base.html.twig -->
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html"; charset=utf-8" />
         <title>{% block title %}Symfony2 Demo{% endblock %} - Group 10: WeWeb</title>
         {% block stylesheets %}
-		<link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
-		{# {{ }} tag prints out the return value of the asset function #}
+			<link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
         	<link href="{{ asset('css/screen.css') }}" type="text/css" rel="stylesheet" />
-	{% endblock %}
+		{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>

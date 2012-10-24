@@ -32,6 +32,7 @@ a:active {
 .sidebar { float:left; width: 210px; padding: 0px; display: inline-block; color: #4C1A00; margin-top: -6px;}
 .sidebar ul { list-style: none; text-align: left; color: #AD5C33; text-indent: -2em; line-height: 25px; }
 
+.main-col { clear: right; }
 .main-col h1 { line-height: 1.2em; font-size: 28px; margin-bottom: 10px; margin-top: 0px; font-weight: 600; color: #DB5D1F;}
 .main-col h2 { line-height: 1.2em; font-size: 28px; margin-bottom: 10px; font-weight: normal; color: #DB5D1F;}
 .main-col p { line-height: 1.5em; margin-bottom: 20px; font-size: 14px; color: #F48A00 }
