@@ -44,6 +44,8 @@ login:
     defaults:  { _controller: BloggerBlogBundle:Security:login }
 login_check:
     pattern:   /login_check
+logout:
+    pattern: /logout
 
 BloggerBlogBundle_newblog:
     pattern:  /newblog

@@ -23,12 +23,16 @@
                 </hgroup>
 
 				<div class="login">
-					  {% block login %}{% endblock %}
+					  {% block login %}
 					<p>
 						{% if app.user.username is defined %}
-							<a href="#">Hi, {{app.user.username}}</a>
+							<a href="#">Hi, {{app.user.username}}</a><label>|</label>
+							<a href="{{ path('logout') }}">Logout</a>
+					    {%else%}
+					        Welcome Guest !
 						{% endif %}
 					</p>
+					{% endblock %}
 				</div>
 
                 <div class="top">

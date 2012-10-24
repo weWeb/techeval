@@ -4,7 +4,7 @@
     {% if error %}
         <div class="loginerror">{{ error.message }}</div>
     {% endif %}
-
+    
 	<div class="loginform">
 		<form action="{{ path('login_check') }}" method="post" class="login">
 		    <label for="username">Username:</label>

@@ -6,9 +6,9 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Collator' => $baseDir . '/vendor/symfony/symfony/src/Symfony/Component/Locale/Resources/stubs/Collator.php',
     'IntlDateFormatter' => $baseDir . '/vendor/symfony/symfony/src/Symfony/Component/Locale/Resources/stubs/IntlDateFormatter.php',
-    'NumberFormatter' => $baseDir . '/vendor/symfony/symfony/src/Symfony/Component/Locale/Resources/stubs/NumberFormatter.php',
     'Locale' => $baseDir . '/vendor/symfony/symfony/src/Symfony/Component/Locale/Resources/stubs/Locale.php',
+    'NumberFormatter' => $baseDir . '/vendor/symfony/symfony/src/Symfony/Component/Locale/Resources/stubs/NumberFormatter.php',
+    'Collator' => $baseDir . '/vendor/symfony/symfony/src/Symfony/Component/Locale/Resources/stubs/Collator.php',
     'SessionHandlerInterface' => $baseDir . '/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Resources/stubs/SessionHandlerInterface.php',
 );
